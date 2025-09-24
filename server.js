@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             current_temp.textContent = `${data.temp_cel}°C`;
             temp_cel.textContent = `${data.temp_cel}°C`;
-            humidity.innerHTML = data.humidity + "%";
+            humidity.textContent = `${data.humidity}%`;
             // co2.innerHTML = data.co2 + " PPM";
         }
         catch (e) {
