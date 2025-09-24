@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Weather Station</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body class="bg-blue-300 min-h-screen flex flex-col items-center justify-center p-4">
+    <div class="w-full max-w-5xl text-center">
+        <h1 class="text-4xl sm:text-5xl font-bold text-white mb-8 drop-shadow-lg">Weather Station</h1>
+        <div class="bg-white/30 backdrop-blur-xl rounded-2xl p-6 sm:p-10 shadow-2xl">
+            <!-- Location and Temperature -->
+            <div class="flex flex-col items-center mb-8">
+                <div class="flex items-center text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <h3 id="location" class="text-2xl font-semibold">Nagpur</h3>
+                </div>
+                <p id="current-temp" class="text-white text-6xl font-extralight mt-4">25°C</p>
+                <p id="weather-description" class="text-white text-lg font-light mt-2 italic">Clear Sky</p>
+            </div>
+
+            <!-- Weather Details Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Temperature Card -->
+                <div class="card">
+                    <img src="/assets/temp_1.png" alt="Temperature Icon" class="w-12 h-12 mb-2">
+                    <p class="text-black font-medium">Temperature</p>
+                    <p id="card-temp" class="text-black text-2xl font-bold mt-1">25°C</p>
+                </div>
+                <!-- Humidity Card -->
+                <div class="card">
+                    <img src="/assets/humidity.png" alt="Humidity Icon" class="w-12 h-12 mb-2">
+                    <p class="text-black font-medium">Humidity</p>
+                    <p id="card-humidity" class="text-black text-2xl font-bold mt-1">70%</p>
+                </div>
+                <!-- Wind Speed Card -->
+                <div class="card">
+                    <img src="/assets/air.png" alt="Wind Icon" class="w-12 h-12 mb-2">
+                    <p class="text-black font-medium">Wind Speed</p>
+                    <p id="card-wind" class="text-black text-2xl font-bold mt-1">15 km/h</p>
+                </div>
+                <!-- CO2 PPM Card -->
+                <div class="card">
+                    <img src="/assets/co2_ppm.png" alt="CO2 Icon" class="w-12 h-12 mb-2">
+                    <p class="text-black font-medium">CO2 PPM</p>
+                    <p id="card-co2" class="text-black text-2xl font-bold mt-1">450 ppm</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/server.js?v=1.1"></script>
+</body>
+
+</html>
