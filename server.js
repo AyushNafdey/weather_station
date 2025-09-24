@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     async function fetchData() {
         try {
-            const response = await fetch("http://192.168.29.243/data");
+            const response = await fetch("https://mayme-transcriptional-unsoftly.ngrok-free.dev");
             const data = await response.json();
             console.log(data)
 
