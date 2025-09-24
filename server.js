@@ -12,9 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 console.error(`HTTP error! status: ${response.status}`);
                 return;
             }
-            console.log(response);
+            // console.log(response);
             const data = await response.json();
-            console.log(data)
+            // console.log(data)
 
             current_temp.textContent = `${data.temp_cel}°C`;
             temp_cel.textContent = `${data.temp_cel}°C`;
