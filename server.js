@@ -8,6 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
     async function fetchData() {
         try {
             const response = await fetch("https://mayme-transcriptional-unsoftly.ngrok-free.dev/data");
+            if (!response.ok) {
+                console.error(`HTTP error! status: ${response.status}`);
+                return;
+            }
             const data = await response.json();
             console.log(data)
 
