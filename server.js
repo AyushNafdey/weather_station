@@ -1,6 +1,6 @@
 console.log("JS loaded");
 document.addEventListener("DOMContentLoaded", () => {
-    let current_temp = document.getElementById('current-temp');
+    let current_temp = document.getElementById("current-temp");
     let temp_cel = document.getElementById('card-temp');
     let humidity = document.getElementById("card-humidity")
     let co2 = document.getElementById("card-co2")
