@@ -6,6 +6,7 @@
 #include <Firebase_ESP_Client.h>
 #include "addons/TokenHelper.h"
 #include "addons/RTDBHelper.h"
+#include "secrets.h"
 using namespace std;
 
 #define mq135 33
@@ -14,11 +15,8 @@ using namespace std;
 #define RL 10000.0
 #define ADC_MAX 4095
 
-#define API_KEY "AIzaSyC9xKkU48QItiF9E8qLbd6YR8BtDT9JLFY"
-#define DATABASE_URL "https://esp32-rtdb-7c4eb-default-rtdb.asia-southeast1.firebasedatabase.app/"
-
-const char *ssid = "Galaxy F12 5985";
-const char *password = "Nafdey#2005*";
+const char *ssid = WIFI_SSID;
+const char *password = WIFI_PASSWORD;
 
 DHT dht(dht11, DHT11);
 Adafruit_BMP085 bmp180;
