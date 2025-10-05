@@ -2,7 +2,6 @@
 #include <DHT.h>
 #include <Adafruit_BMP085.h>
 #include <WiFi.h>
-// #include <WebServer.h>
 #include <Firebase_ESP_Client.h>
 #include "addons/TokenHelper.h"
 #include "addons/RTDBHelper.h"
