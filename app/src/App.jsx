@@ -44,7 +44,7 @@ function App() {
           <Card title="Temperature" img={temperature} value={(sensorData.Temperature_celsius ?? 25) + "°C" + ", " + (sensorData.Temperature_fahrenheit ?? 77) + "°F"} />
           <Card title="Humidity" img={humidity} value={(sensorData.Humidity ?? 70) + "%"} />
           <Card title="Air Quality" img={air_quality_img} value={(sensorData.Air_quality ?? 450) + " PPM"} />
-          <Card title="CO2 PPM" img={co2_ppm} value={(sensorData.Air_quality ?? 450) + " PPM"} />
+          <Card title="CO2 PPM" img={co2_ppm} value={(sensorData.CO2_PPM ?? 450) + " PPM"} />
           <Card title="Pressure" img={pressure} value={(sensorData.Pressure ?? 101325) + " Pa"} />
           <Card title="Sea Level Pressure" img={sea_level_pressure} value={(sensorData.Pressure_sea_level ?? 101325) + " Pa"} />
           <Card title="Altitude" img={altitude} value={(sensorData.Altitude ?? 264) + " mts"} />
