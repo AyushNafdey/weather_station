@@ -249,5 +249,3 @@ This project is currently unlicensed. Feel free to use it for personal or educat
 - [ ] Database for long-term data storage
 
 ---
-
-Made with ❤️ by [Ayush Nafdey](https://github.com/AyushNafdey)
